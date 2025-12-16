@@ -74,7 +74,7 @@ const AboutSection = ({ teamMembers }: AboutSectionProps) => {
 
                 {/* Name Card */}
                 <div className="absolute bottom-6 left-6 right-6 glass-card p-6 rounded-sm">
-                  <h3 className="text-2xl font-display font-medium text-foreground mb-1">
+                  <h3 className="text-2xl font-display font-medium text-white mb-1">
                     {member.name}
                   </h3>
                   <p className="text-primary text-sm tracking-wide">

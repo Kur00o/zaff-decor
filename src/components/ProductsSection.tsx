@@ -46,10 +46,10 @@ const ProductsSection = ({ products }: ProductsSectionProps) => {
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-xl font-display font-medium text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl font-display font-medium text-white mb-2 group-hover:text-primary transition-colors duration-300">
                   {product.title}
                 </h3>
-                <p className="text-muted-foreground text-sm line-clamp-2 mb-4">
+                <p className="text-white/80 text-sm line-clamp-2 mb-4">
                   {product.description}
                 </p>
                 <div className="flex items-center gap-2 text-primary text-sm font-medium opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
