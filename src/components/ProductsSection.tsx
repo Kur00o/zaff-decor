@@ -12,8 +12,14 @@ interface ProductsSectionProps {
 
 const ProductsSection = ({ products }: ProductsSectionProps) => {
   return (
-    <section id="products" className="py-24 bg-texture">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="products" className="py-24 relative overflow-hidden bg-secondary">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary to-background" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(38_60%_55%_/_0.08),_transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_hsl(38_60%_55%_/_0.06),_transparent_50%)]" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="section-subtitle inline-block mb-4">What We Offer</span>
