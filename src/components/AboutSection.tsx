@@ -35,8 +35,14 @@ const AboutSection = ({ teamMembers }: AboutSectionProps) => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-texture">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="about" className="py-24 relative overflow-hidden bg-card">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-tl from-background via-card to-secondary/50" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(38_60%_55%_/_0.05),_transparent_60%)]" />
+      <div className="absolute top-1/4 -left-32 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
           <span className="section-subtitle inline-block mb-4">Our Story</span>
