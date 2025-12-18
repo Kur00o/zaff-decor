@@ -33,9 +33,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 sm:gap-3 group">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg sm:text-xl">
-              Z
-            </div>
+            <img
+              src="/zaffdecorlogo.png"
+              alt="Zaff Decor logo"
+              className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+            />
             <span className="font-display text-xl sm:text-2xl font-medium text-foreground group-hover:text-primary transition-colors duration-300">
               Zaff Decor
             </span>

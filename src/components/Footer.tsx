@@ -8,9 +8,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4 sm:mb-6">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg sm:text-xl">
-                Z
-              </div>
+              <img
+                src="/zaffdecorlogo.png"
+                alt="Zaff Decor logo"
+                className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+              />
               <span className="font-display text-xl sm:text-2xl font-medium text-foreground">
                 Zaff Decor
               </span>
