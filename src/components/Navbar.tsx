@@ -29,14 +29,14 @@ const Navbar = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-xl">
+          <a href="#home" className="flex items-center gap-2 sm:gap-3 group">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg sm:text-xl">
               Z
             </div>
-            <span className="font-display text-2xl font-medium text-foreground group-hover:text-primary transition-colors duration-300">
+            <span className="font-display text-xl sm:text-2xl font-medium text-foreground group-hover:text-primary transition-colors duration-300">
               Zaff Decor
             </span>
           </a>
