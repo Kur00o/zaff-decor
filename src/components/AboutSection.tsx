@@ -36,11 +36,6 @@ const AboutSection = ({ teamMembers }: AboutSectionProps) => {
 
   return (
     <section id="about" className="py-16 sm:py-24 relative overflow-hidden bg-[hsl(30_10%_92%)]">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-tl from-[hsl(30_8%_90%)] via-[hsl(30_10%_92%)] to-[hsl(30_10%_94%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(38_40%_70%_/_0.12),_transparent_60%)]" />
-      <div className="hidden sm:block absolute top-1/4 -left-32 w-64 h-64 bg-[hsl(38_40%_70%_/_0.15)] rounded-full blur-3xl" />
-      <div className="hidden sm:block absolute bottom-1/4 -right-32 w-64 h-64 bg-[hsl(38_40%_70%_/_0.15)] rounded-full blur-3xl" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-20">
