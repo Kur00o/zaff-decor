@@ -35,21 +35,20 @@ const AboutSection = ({ teamMembers }: AboutSectionProps) => {
   ];
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden bg-card">
+    <section id="about" className="py-24 relative overflow-hidden bg-[hsl(30_10%_92%)]">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-tl from-background via-card to-secondary/50" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(38_60%_55%_/_0.05),_transparent_60%)]" />
-      <div className="absolute top-1/4 -left-32 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-[hsl(30_8%_90%)] via-[hsl(30_10%_92%)] to-[hsl(30_10%_94%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(38_40%_70%_/_0.12),_transparent_60%)]" />
+      <div className="absolute top-1/4 -left-32 w-64 h-64 bg-[hsl(38_40%_70%_/_0.15)] rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-[hsl(38_40%_70%_/_0.15)] rounded-full blur-3xl" />
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
           <span className="section-subtitle inline-block mb-4">Our Story</span>
-          <h2 className="section-title text-foreground mb-6">
+          <h2 className="section-title text-[hsl(20_10%_15%)] mb-6">
             Meet the <span className="text-gradient-gold">Family</span>
           </h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
+          <p className="text-[hsl(20_10%_40%)] max-w-3xl mx-auto text-lg leading-relaxed">
             At Zaff Decor, we're more than just a business – we're a family. 
             Our partnership is built on shared values, mutual respect, and a 
             passion for creating beautiful spaces that bring joy to our clients.
@@ -93,20 +92,20 @@ const AboutSection = ({ teamMembers }: AboutSectionProps) => {
         </div>
 
         {/* Family Culture Section */}
-        <div className="glass-card rounded-sm p-10 lg:p-16">
+        <div className="bg-white/70 backdrop-blur-xl border border-[hsl(30_10%_85%)] rounded-sm p-10 lg:p-16 shadow-lg">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left - Content */}
             <div>
-              <h3 className="text-3xl md:text-4xl font-display font-medium text-foreground mb-6">
+              <h3 className="text-3xl md:text-4xl font-display font-medium text-[hsl(20_10%_15%)] mb-6">
                 Why Choose a <span className="text-gradient-gold">Family Business?</span>
               </h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
+              <p className="text-[hsl(20_10%_40%)] leading-relaxed mb-6">
                 When you work with Zaff Decor, you're not just hiring a service – 
                 you're joining our family. We believe that the best results come 
                 from genuine relationships, open communication, and a shared 
                 commitment to excellence.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-8">
+              <p className="text-[hsl(20_10%_40%)] leading-relaxed mb-8">
                 Our family culture means we take personal pride in every project. 
                 We understand that your space is an extension of your identity, 
                 and we treat it with the care and attention we'd give our own homes.
@@ -121,13 +120,13 @@ const AboutSection = ({ teamMembers }: AboutSectionProps) => {
               {values.map((value, index) => (
                 <div
                   key={value.title}
-                  className="p-6 bg-secondary/30 rounded-sm border border-border/50 hover:border-primary/30 transition-all duration-300"
+                  className="p-6 bg-[hsl(30_10%_96%)] rounded-sm border border-[hsl(30_10%_85%)] hover:border-primary/50 transition-all duration-300"
                 >
                   <value.icon className="w-8 h-8 text-primary mb-4" />
-                  <h4 className="font-display text-lg font-medium text-foreground mb-2">
+                  <h4 className="font-display text-lg font-medium text-[hsl(20_10%_15%)] mb-2">
                     {value.title}
                   </h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-[hsl(20_10%_40%)] leading-relaxed">
                     {value.description}
                   </p>
                 </div>
